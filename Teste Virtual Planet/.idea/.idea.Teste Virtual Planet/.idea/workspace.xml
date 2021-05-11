@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d597fd6f-f479-4444-ad6d-bb47f2d55390" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Teste Virtual Planet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Teste Virtual Planet/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Draw Climber Virtual Planet/Scripts/Game Controllers/WebGlCameraAspectController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Draw Climber Virtual Planet/Scripts/Game Controllers/WebGlCameraAspectController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Draw Climber Virtual Planet/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Draw Climber Virtual Planet/Scenes/GameScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +125,7 @@
       <workItem from="1620729600734" duration="35000" />
       <workItem from="1620729650667" duration="2755000" />
       <workItem from="1620732450484" duration="3159000" />
-      <workItem from="1620737250948" duration="492000" />
+      <workItem from="1620737250948" duration="1672000" />
     </task>
     <servers />
   </component>
