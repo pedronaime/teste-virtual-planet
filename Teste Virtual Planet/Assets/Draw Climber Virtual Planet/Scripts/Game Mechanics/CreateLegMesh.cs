@@ -2,10 +2,16 @@
 
 namespace Draw_Climber_Virtual_Planet.Scripts.Game_Mechanics
 {
+    /// <summary>
+    /// Creates a mesh for the leg that was drawn with the line renderer
+    /// </summary>
+
     public class CreateLegMesh : MonoBehaviour
     {
+        /// <summary>
+        /// The material to be used to render the mesh
+        /// </summary>
         [SerializeField] private Material legMaterial;
-        [SerializeField] private PhysicMaterial legPhysicMaterial;
         
         private MeshFilter _meshFilter;
         
@@ -20,6 +26,10 @@ namespace Draw_Climber_Virtual_Planet.Scripts.Game_Mechanics
             _drawLine.OnStoppedDrawing += CreateMesh;
         }
 
+        /// <summary>
+        /// Creates the mesh when the player finishes drawing
+        /// Gets Called by the DrawLine class event
+        /// </summary>
         private void CreateMesh()
         {
             if (!_meshFilter)
@@ -28,7 +38,6 @@ namespace Draw_Climber_Virtual_Planet.Scripts.Game_Mechanics
                 var meshRenderer = gameObject.AddComponent<MeshRenderer>();
                 meshRenderer.material = legMaterial;
                 _meshCollider.convex = true;
-                _meshCollider.material = legPhysicMaterial;
             }
             
             _meshFilter.sharedMesh = _drawLine.LegMesh;

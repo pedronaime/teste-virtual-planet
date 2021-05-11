@@ -2,8 +2,15 @@
 
 namespace Draw_Climber_Virtual_Planet.Scripts.Camera_Behavior
 {
+    /// <summary>
+    /// A basic follow camera with a dampening effect 
+    /// </summary>
+    
     public class CameraMovement : MonoBehaviour
     {
+        /// <summary>
+        /// The player transform
+        /// </summary>
         [SerializeField] private Transform player;
         
         private Vector3 _cameraOffset;

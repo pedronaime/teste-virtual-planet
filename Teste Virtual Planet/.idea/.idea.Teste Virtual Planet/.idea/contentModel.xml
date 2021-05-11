@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\pe_ma\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\pe_ma\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Teste Virtual Planet.1276391075.00" t="ExcludeRecursive" />
-    <e p="C:\Users\pe_ma\OneDrive\Área de Trabalho\Dev\New Unity Project\Teste Virtual Planet" t="IncludeRecursive">
+    <e p="C:\Users\pe_ma\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Teste Virtual Planet.751711979.00" t="ExcludeRecursive" />
+    <e p="C:\Users\pe_ma\OneDrive\Documentos\GitHub\teste-virtual-planet\Teste Virtual Planet" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Draw Climber Virtual Planet" t="Include">
@@ -21,9 +21,6 @@
               <e p="HandleLegContact.cs" t="Include" />
               <e p="PlayerMovement.cs" t="Include" />
               <e p="RotateLeg.cs" t="Include" />
-            </e>
-            <e p="Player Inputs" t="Include">
-              <e p="PlayerInput.cs" t="Include" />
             </e>
             <e p="UI" t="Include">
               <e p="HandleDrawArea.cs" t="Include" />

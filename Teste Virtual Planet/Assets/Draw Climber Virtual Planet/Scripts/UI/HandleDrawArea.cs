@@ -3,6 +3,10 @@ using UnityEngine.EventSystems;
 
 namespace Draw_Climber_Virtual_Planet.Scripts.UI
 {
+    /// <summary>
+    /// Verifies if the player is drawing in the appropriate area and controls the timescale
+    /// </summary>
+    
     public class HandleDrawArea : MonoBehaviour, IPointerDownHandler, IPointerExitHandler, IPointerUpHandler
     {
         

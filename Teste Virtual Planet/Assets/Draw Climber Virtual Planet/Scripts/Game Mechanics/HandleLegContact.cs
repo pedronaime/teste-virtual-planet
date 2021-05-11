@@ -2,32 +2,35 @@
 
 namespace Draw_Climber_Virtual_Planet.Scripts.Game_Mechanics
 {
+    /// <summary>
+    /// Handles the collision between the leg and the scenario
+    /// </summary>
+    
     public class HandleLegContact : MonoBehaviour
     {
-        private float _furthestDistance;
-        public float FurthestDistance => _furthestDistance;
+        public float FurthestDistance { get; private set; }
 
-        private Vector3 _furthestPoint;
-
-        public Vector3 FurthestPoint => _furthestPoint;
-
-        private bool _colliding;
-        public bool Colliding => _colliding;
+        public bool Colliding { get; private set; }
 
         private void OnCollisionEnter(Collision other)
         {
             if (IsLeg(other))
             {
-                _colliding = true;
+                Colliding = true;
             }
         }
         
         private void OnCollisionExit(Collision other)
         {
             Debug.Log("Leg left Contact");
-            _colliding = false;
+            Colliding = false;
         }
 
+        /// <summary>
+        /// Verifies if the collision is between the leg and another object and sets the furthest contact distance
+        /// </summary>
+        /// <param name="collision"></param>
+        /// <returns></returns>
         private bool IsLeg(Collision collision)
         {
             var position = transform.position;
@@ -37,10 +40,9 @@ namespace Draw_Climber_Virtual_Planet.Scripts.Game_Mechanics
                 var point = collision.GetContact(i).point;
                 var distance = Vector3.Distance(point, position);
 
-                if (distance > _furthestDistance)
+                if (distance > FurthestDistance)
                 {
-                    _furthestPoint = point;
-                    _furthestDistance = distance;
+                    FurthestDistance = distance;
                 }
                 
                 if (collision.GetContact(i).thisCollider.CompareTag("Leg"))

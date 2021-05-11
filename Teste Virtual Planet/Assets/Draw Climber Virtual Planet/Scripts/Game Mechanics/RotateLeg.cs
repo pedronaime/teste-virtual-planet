@@ -2,15 +2,21 @@
 
 namespace Draw_Climber_Virtual_Planet.Scripts.Game_Mechanics
 {
+    /// <summary>
+    /// Rotates the players legs
+    /// </summary>
     public class RotateLeg : MonoBehaviour
     {
-        [SerializeField] private float rotateSpeed;
+        /// <summary>
+        /// Number of rotations per second of the legs
+        /// </summary>
+        [SerializeField] private float rotationPerSecond;
 
-        public float RotateSpeed => rotateSpeed;
+        public float RotationPerSecond => rotationPerSecond;
 
         private void Update()
         {
-            transform.Rotate(-Vector3.up, rotateSpeed * Time.deltaTime * 360);
+            transform.Rotate(-Vector3.up, rotationPerSecond * Time.deltaTime * 360);
         }
     }
 }
