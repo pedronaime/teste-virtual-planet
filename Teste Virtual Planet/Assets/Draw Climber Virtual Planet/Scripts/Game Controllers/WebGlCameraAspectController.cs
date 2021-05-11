@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 namespace Draw_Climber_Virtual_Planet.Scripts.Game_Controllers
 {
@@ -12,12 +13,17 @@ namespace Draw_Climber_Virtual_Planet.Scripts.Game_Controllers
         /// </summary>
         [SerializeField] private Camera[] cameras;
 
+        [SerializeField] private Text test;
+        [SerializeField] private Text test2;
+
         private float _targetAspect = 0.5f;
 
         private void Update()
         {
 #if UNITY_WEBGL
-            var windowAspect =  (float) Screen.width /  Screen.height;
+            test.text = Time.time + "Dentro do If";
+
+            var windowAspect = (float) Screen.width /  Screen.height;
             var scaleHeight = windowAspect / _targetAspect;
             var scaleWidth = 1f / scaleHeight;
 
@@ -30,6 +36,8 @@ namespace Draw_Climber_Virtual_Planet.Scripts.Game_Controllers
                 AdjustWidth(scaleWidth);
             }
 #endif
+                        
+            test2.text = Time.time + "Fora do If";
         }
 
         /// <summary>
